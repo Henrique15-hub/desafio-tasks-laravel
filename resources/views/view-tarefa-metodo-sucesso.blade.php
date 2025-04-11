@@ -1,4 +1,4 @@
-{{-- view referente á pagina de sucessos do formulario de criação de tarefas --}}
+<x-app-layout>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,7 +7,7 @@
         body {
             font-family: Arial, sans-serif;
                 background-color: #36454F; /* Fundo cinza escuro */
-                margin: 10px;
+
                 padding: 0;
         }
         form {
@@ -27,7 +27,7 @@
                 cursor: pointer;
                 transition: background-color 0.3s ease;
                 color: white;
-                
+
             }
 
             button:hover {
@@ -50,7 +50,7 @@
     </style>
 </head>
 <body>
-    <h1>TAREFA {{$metodo}} COM SUCESSO!</h1>
+    <h1 style="font-size: 20px">TAREFA {{$metodo}} COM SUCESSO!</h1>
     <form method="POST" action="{{route('nova-tarefa')}}">
         @csrf
         <button>Criar nova tarefa</button>
@@ -64,3 +64,4 @@
     </form>
 </body>
 </html>
+</x-app-layout>

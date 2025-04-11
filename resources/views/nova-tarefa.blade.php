@@ -14,7 +14,6 @@
             align-items: center;
             height: 100vh;
         }
-      
 
         form {
             background-color: #26454F;
@@ -63,11 +62,8 @@
         @method('put')
         <label for="">Nome da tarefa:</label>
         <input type="text" id="name" name="name">
-
         <label for="">Horas da tarefa (24hrs):</label>
         <input type='text' id="horas" name="horas">
-
-
         <input type="submit" value="Salvar">
     </form>
 </body>

@@ -10,6 +10,6 @@ class ModelTask extends Model
         'nome',
         'horas',
         'created_at',
-        'updated_at', 
+        'updated_at',
     ];
 }
